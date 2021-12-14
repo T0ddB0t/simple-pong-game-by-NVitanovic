@@ -1,5 +1,5 @@
 #include <iostream>
-#include "conio.h" //used because repl.it doesn't have <conio.h>
+#include "conio.h" //used because repl.it doesn't have <conio.h> :/
 
 
 using namespace std;
@@ -30,10 +30,10 @@ public:
     }
 
 
- void changeDIR(eDir d)
-    {
-      dir = d;
-    } 
+    void changeDIR(eDir d)
+     {
+       dir = d;
+     } 
 
   void randDIR()
   {
@@ -183,6 +183,7 @@ class cGM
               cout << "\xB2"; // p1
                else if(p1x == j && p1y + 3 == i)
               cout << "\xB2"; // p1
+            
              else if(p2x == j && p2y == i)
               cout << "\xB2"; //p2
                 else if(p2x == j && p2y + 1 == i)
@@ -261,11 +262,13 @@ class cGM
           if (bally == p1x + i)
             ball ->  changeDIR((eDir)((rand() % 3) + 4));
       // right paddle
+      
       for(int i = 0; i < 4; i++ )
         if (ballx == p2x - 1)
           if (bally == p2x + i )
             ball ->  changeDIR((eDir)((rand() % 3) + 1));
             //bottom wall
+      
       if(bally == height - 1)
         ball->changeDIR(ball -> getdir() == DOWNRIGHT ? UPRIGHT : UPLEFT);
 
