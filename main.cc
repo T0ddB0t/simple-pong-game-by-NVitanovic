@@ -208,7 +208,7 @@ class cGM
          cout << "#";
       cout << endl;
       
-      cout << "Score 1: " << score1 << "  " << "Score 2: " << score2;
+      cout << "Score 1: " << score1 << "  " << "Score 2: " << score2 << " i_luv_u";
     
 
     }
